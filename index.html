@@ -3,19 +3,37 @@
 <head>
   <title>
     INDEV
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet" type="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/quasar@2.0.4/dist/quasar.prod.css" rel="stylesheet" type="text/css">
   </title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/quasar@2.0.4/dist/quasar.prod.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <div id="q-app">
-    <div class="row">
-       <q-header elevated class="bg-primary">
-      </q-header>
-    </div>
+
+      <div id="q-pa-md">
+     <q-layout view="lHh lpr lFf">
+       <q-header elevated class="bg-white text-black">
+         <q-toolbar>
+           <q-avatar size="80px">
+             <img src="./assets/logo.svg"></img>
+           </q-avatar>
+           <q-toolbar-title>GearDev</q-toolbar-title>
+           <q-btn flat style="color: #b87333;" label="About me"></q-btn>
+           <q-btn flat style="color: #b87333;" label="Projects"></q-btn>
+           <q-btn flat style="color: #b87333;" label="Dark mode"></q-btn>
+
+
+         </q-toolbar>
+       </q-header>
+       <q-page-container>
+         Hello,world
+       </q-page-container>
+     </q-layout>
+     </div>
+1
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/quasar@2.0.4/dist/quasar.umd.prod.js"></script>
-  <script src="/scripts/main.js"> </script>
+  <script src="./scripts/main.js"> </script>
 </body>
 </html>
