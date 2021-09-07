@@ -1,6 +1,6 @@
 
 let canvas = new PIXI.Application({width: window.innerWidth, height:window.innerHeight-100})
-document.getElementById("pixi-bg").append(this.canvas.view)
+document.getElementById("pixi-bg").append(canvas.view)
 
 
 const app = Vue.createApp({
