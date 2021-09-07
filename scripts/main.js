@@ -17,7 +17,7 @@ const app = Vue.createApp({
           .load(this.init)
         },
         methods: {
-          loaded: function init() {
+          init: function () {
             let building = new PIXI.Sprite(
               PIXI.Loader.shared.resources["./assets/building.png"].texture
             )
