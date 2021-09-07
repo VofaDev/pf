@@ -21,6 +21,7 @@ const app = Vue.createApp({
             let building = new PIXI.Sprite(
               PIXI.Loader.shared.resources["./assets/building.png"].texture
             )
+            console.log(  PIXI.Loader.shared.resources["./assets/building.png"].texture)
             canvas.stage.addChild(building);
           }
         }
