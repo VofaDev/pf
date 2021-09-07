@@ -9,7 +9,7 @@ const app = Vue.createApp({
 
           }
         },
-        mounted () {
+        mounted: function () {
 
 
           PIXI.Loader.shared
