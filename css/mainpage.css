@@ -1,0 +1,30 @@
+body {
+
+}
+
+.custom-buttons-outside {
+    user-select: none;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  font-size:  13px;
+}
+
+.custom-buttons-inside {
+    user-select: none;
+  transition: 0.5s;
+  height: 5px;
+  width: 0px;
+  background-color:black;
+  border-color: white;
+  border-style: solid;
+  border-width: 0px;
+  border-bottom-width: 2px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.custom-buttons-outside:hover .custom-buttons-inside {
+ width:70px;
+}
