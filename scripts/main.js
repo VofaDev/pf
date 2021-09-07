@@ -1,13 +1,16 @@
+
+let canvas = new PIXI.Application({width: window.innerWidth, height:window.innerHeight-100})
+document.getElementById("pixi-bg").append(this.canvas.view)
+
+
 const app = Vue.createApp({
         setup () {
           return {
-            canvas: null,
+
           }
         },
         mounted () {
-          this.canvas = new PIXI.Application({width: window.innerWidth, height:window.innerHeight-100})
 
-          document.getElementById("pixi-bg").append(this.canvas.view)
 
           PIXI.Loader.shared
           .add("./assets/building.png")
@@ -18,7 +21,7 @@ const app = Vue.createApp({
             let building = new PIXI.Sprite(
               PIXI.Loader.shared.resources["./assets/building.png"].texture
             )
-            this.canvas.stage.addChild(building);
+            canvas.stage.addChild(building);
           }
         }
       })
