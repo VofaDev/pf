@@ -9,14 +9,14 @@ const app = Vue.createApp({
 
           document.getElementById("pixi-bg").append(this.canvas.view)
 
-          PIXI.Loader
+          PIXI.Loader.shared
           .add("./assets/building.png")
           .load(this.init)
         },
         methods: {
           loaded: function init() {
             let building = new PIXI.Sprite(
-              PIXI.Loader.resources["./assets/building.png"].texture
+              PIXI.Loader.shared.resources["./assets/building.png"].texture
             )
             this.canvas.stage.addChild(building);
           }
